@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../../../assets/vendors/css/base/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../assets/css/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../../assets/css/owl-carousel/owl.theme.min.css">
+    <link rel="stylesheet" href="../../../assets/css/datatables/datatables.min.css">
+    <link rel="stylesheet" href="../../../assets/icons/lineawesome/css/line-awesome.css" />
+    <link rel="stylesheet" href="../../../assets/icons/lineawesome/css/line-awesome-font-awesome.css" />
+    <link href="../../../assets/css/plugins/jsTree/style.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../../assets/vendors/css/base/elisyam-1.5.min.css?v=1.2">
+    <link rel="stylesheet" href="../../../js/select2/dist/css/select2.min.css" />
+
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="canvas">
+            <img src="../../../assets/img/logo.png" alt="logo" class="loader-logo">
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <div>
+        <div class="widget">
+            <!--<div class="widget-header bordered no-actions d-flex align-items-center">
+                <h2 class="page-header-title">Roles</h2>
+                <div>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-primary btnLista" onclick="limpiarFormulario(); mostrarFormulario(true); consultarPermisos();">
+                                    <i class="fa fa-file"></i><span>Nuevo</span>
+                                </button>
+                                <button type="button" class="btn btn-primary cssOcultarObjeto btnFormulario" onclick="limpiarFormulario();"><i class="fa fa-eraser"></i><span>Limpiar</span></button>
+                                <button type="button" class="btn btn-primary cssOcultarObjeto btnFormulario" onclick="Guardar();"><i class="fa fa-save"></i><span>Guardar</span></button>
+                                <button type="button" class="btn btn-primary cssOcultarObjeto btnFormulario" onclick="Eliminar();"><i class="fa fa-trash"></i><span>Eliminar</span></button>
+                                <button type="button" class="btn btn-primary cssOcultarObjeto btnFormulario" onclick="mostrarFormulario(false); limpiarFormulario();">
+                                    <i class="fa fa-times-circle-o"></i><span>Cancelar</span>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>-->
+            <div class="widget-body">
+                <form class="form-horizontal">
+                    <div class="row btnLista" id="div_Lista">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+                            <div class="table-responsive">
+                                <table id="table_Lista" class="table table-bordered" style="width:100%;"></table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="div_Formulario" class="cssOcultarObjeto btnFormulario">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+                                    <div class="form-group">
+                                        <label>Nombre: </label>
+                                        <div class="input-group">
+
+                                            <span class="input-group-addon addon-primary">
+                                                <i class="la la-hospital-o"></i>
+                                            </span>
+                                            <input type="text" class="form-control" id="input_Nombre" maxlength="200"
+                                                   mensaje="Nombre" requerido="true" validacion="texto" />
+                                        </div>
+                                        <small>
+                                            Máximo 150 caracteres.
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+                                    <div class="form-group">
+                                        <label>Descripción: </label>
+                                        <textarea class="form-control" id="textarea_Descripcion" rows="2" maxlength="250" requerido="true" validacion="texto"></textarea>
+                                        <small class="form-text text-muted">Maximo 250 caracteres.</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br />
+
+                            <div class="row">
+
+                                <div class=" bordered d-flex align-items-center" style="border-bottom: 1px solid  dashed;">
+
+                                    <input type="checkbox" onclick="seleccionarTodos(this)" id="checkbox_SeleccionarTodos" />&#160;
+                                    <h2 class="page-header-title"> <label for="checkbox_SeleccionarTodos" style="cursor:pointer;"> Permisos </label></h2>
+
+                                </div>
+
+                                <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <div id="jstree">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Begin Vendor Js -->
+    <script src="../../../assets/vendors/js/base/jquery.min.js"></script>
+    <script src="../../../assets/vendors/js/base/jquery.ui.min.js"></script>
+    <script src="../../../js/bootstrap.js"></script>
+    <script src="../../../js/jquery.validate.js"></script>
+    <script src="../../../assets/vendors/js/datatables/datatables.min.js"></script>
+    <script src="../../../assets/vendors/js/datatables/dataTables.buttons.min.js"></script>
+    <script src="../../../assets/vendors/js/datatables/buttons.print.min.js"></script>
+    <script src="../../../assets/js/components/tables/tables.js"></script>
+    <script src="../../../js/generales_Fn.js"></script>
+    <script src="../../../js/select2/dist/js/select2.js"></script>
+    <script src="../../../js/plugins/jsTree/jstree.min.js"></script>
+    <script src="../../../js/Configuracion.js"></script>
+    <script src="Roles.js?1.0"></script>
+
+     
+</body>
+
+</html>

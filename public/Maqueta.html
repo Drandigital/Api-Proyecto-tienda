@@ -1,0 +1,773 @@
+﻿<!DOCTYPE html>
+<html style="width:100% !important">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Maqueta</title>
+    <!-- Favicon 
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">-->
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/vendors/css/base/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendors/css/base/elisyam-1.5.min.css?v=1.3">
+    <link rel="stylesheet" href="assets/vendors/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/owl-carousel/owl.theme.min.css">
+
+
+    <style>
+        .table td, .table th {
+            padding: .40rem !important;
+        }
+
+        .container-fluid {
+            padding: 15px 15px;
+        }
+
+        ul .list-unstyled a {
+            cursor: pointer;
+        }
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #596093;
+            border-radius: 10px;
+        }
+
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+                background: #555;
+                border-radius: 10px;
+            }
+
+        nav#nav_Menus {
+            overflow: auto !important;
+        }
+
+        .noty_modal {
+            background-color: rgba(0, 0, 0, 0.03) !important;
+        }
+
+        #ul_btn_Maqueta {
+            float: right;
+        }
+
+            #ul_btn_Maqueta button {
+                width: 100px;
+            }
+
+        h2#h2_TituloPanelMaqueta {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 18pt;
+        }
+
+        #ul_btn_Maqueta button:disabled {
+            cursor: no-drop;
+        }
+
+
+        #div_bannerTitulo {
+            position: fixed;
+            margin-top: -15px;
+            padding: 10px 0px !important;
+        }
+
+        .popover {
+            max-width: 100% !important;
+            min-width: 300px;
+            left: 150px !important;
+        }
+
+        @media (min-width: 1000px) {
+            .modal-lg {
+                max-width: 950px;
+            }
+        }
+
+        @media (min-width: 1100px) {
+            .modal-lg {
+                max-width: 1050px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .modal-lg {
+                max-width: 1150px;
+            }
+        }
+
+        @media (min-width: 1300px) {
+            .modal-lg {
+                max-width: 1250px;
+            }
+        }
+    </style>
+</head>
+
+<body id="page-top">
+    <!-- Begin Preloader -->
+    <div id="preloader">
+        <div class="canvas">
+            <!-- <img src="assets/img/logo.png" alt="logo" class="loader-logo">-->
+            <div class="spinner"></div>
+        </div>
+    </div>
+    <!-- End Preloader -->
+    <div class="page">
+        <!-- Begin Header -->
+        <header class="header">
+            <nav class="navbar fixed-top">
+                <!-- Begin Search Box-->
+                <div class="search-box">
+                    <button class="dismiss"><i class="ion-close-round"></i></button>
+                    <form id="searchForm" action="#" role="search">
+                        <input type="search" placeholder="Search something ..." class="form-control">
+                    </form>
+                </div>
+                <!-- End Search Box-->
+                <!-- Begin Topbar -->
+                <div class="navbar-holder d-flex align-items-center align-middle justify-content-between">
+                    <!-- Begin Logo -->
+                    <div class="navbar-header">
+                        <a href="#" class="navbar-brand">
+                            <div class="brand-image brand-big">
+                                <img src="assets/img/logo.png" alt="logo" class="logo-big" id="img_LogoAreaTrabajo1">
+                            </div>
+                            <div class="brand-image brand-small">
+                                <img src="assets/img/logo.png" alt="logo" class="logo-small" id="img_LogoAreaTrabajo2">
+                            </div>
+                        </a>
+                        <!-- Toggle Button -->
+                        <a id="toggle-btn" href="#" class="menu-btn active">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                        <!-- End Toggle -->
+                    </div>
+                    <!-- End Logo -->
+                    <!-- Begin Navbar Menu -->
+                    <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center pull-right">
+                       
+                        <li class="nav-item dropdown">
+                            <a id="notifications" rel="nofollow" data-target="#" href="#" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false" class="nav-link">
+                                <i class="la la-bell animated infinite swing"></i><span class="badge-pulse"></span>
+                            </a>
+                            <ul aria-labelledby="notifications" class="dropdown-menu notification">
+                                <li>
+                                    <div class="notifications-header">
+                                        <div class="title">Notifications (4)</div>
+                                        <div class="notifications-overlay"></div>
+                                        
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="message-icon">
+                                            <i class="la la-user"></i>
+                                        </div>
+                                        <div class="message-body">
+                                            <div class="message-body-heading">
+                                                New user registered
+                                            </div>
+                                            <span class="date">2 hours ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="message-icon">
+                                            <i class="la la-calendar-check-o"></i>
+                                        </div>
+                                        <div class="message-body">
+                                            <div class="message-body-heading">
+                                                New event added
+                                            </div>
+                                            <span class="date">7 hours ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="message-icon">
+                                            <i class="la la-history"></i>
+                                        </div>
+                                        <div class="message-body">
+                                            <div class="message-body-heading">
+                                                Server rebooted
+                                            </div>
+                                            <span class="date">7 hours ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="message-icon">
+                                            <i class="la la-twitter"></i>
+                                        </div>
+                                        <div class="message-body">
+                                            <div class="message-body-heading">
+                                                You have 3 new followers
+                                            </div>
+                                            <span class="date">10 hours ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a rel="nofollow" href="#" class="dropdown-item all-notifications text-center">
+                                        View
+                                        All Notifications
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- End Notifications -->
+                        <!-- User -->
+                        <li class="nav-item dropdown">
+                            <a id="user" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true"
+                               aria-expanded="false" class="nav-link">
+                                <img src="" alt="..."
+                                     class="avatar rounded-circle" id="img_Avatar1" onerror="this.src='assets/img/avatar/avatar-01.jpg'" />
+                            </a>
+                            <ul aria-labelledby="user" class="user-size dropdown-menu">
+                                <li class="welcome">
+                                    <a href="#" class="edit-profil"><i class="la la-gear"></i></a>
+                                    <img src="" id="img_Avatar2" alt="..." class="rounded-circle" onerror="this.src='assets/img/avatar/avatar-01.jpg'">
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item" onclick="abrirPrefil()">
+                                        Perfil
+                                    </a>
+                                </li>
+                                <!--<li>
+                                    <a href="app-mail.html" class="dropdown-item">
+                                        Messages
+                                    </a>
+                                </li>-->
+                                <li>
+                                    <a href="#" class="dropdown-item no-padding-bottom">
+                                        Settings
+                                    </a>
+                                </li>
+                                <li class="separator"></li>
+                                <li>
+                                    <a href="pages-faq.html" class="dropdown-item no-padding-top">
+                                        Faq
+                                    </a>
+                                </li>
+                                <li>
+                                    <a rel="nofollow" class="dropdown-item logout text-center" style="cursor:pointer;" onclick="cerrarSesion()">
+                                        <i class="ti-power-off"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    
+                    </ul>
+                    <!-- End Navbar Menu -->
+                </div>
+                <!-- End Topbar -->
+            </nav>
+        </header>
+        <!-- End Header -->
+        <!-- Begin Page Content -->
+        <div class="page-content d-flex align-items-stretch">
+            <div class="default-sidebar">
+                <!-- Begin Side Navbar -->
+                <nav id="nav_Menus" class="side-navbar box-scroll sidebar-scroll">
+                </nav>
+                <!-- End Side Navbar -->
+            </div>
+            <!-- End Left Sidebar -->
+            <!-- Begin Content -->
+            <div class="content-inner profile" id="div_ContainerAreaTrabajo">
+
+                <div class="container-fluid">
+
+                    <div class="widget-header bordered d-flex align-items-center" id="div_bannerTitulo">
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xs-12">
+                            <h2 id="h2_TituloPanelMaqueta"></h2>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-8 col-xs-12">
+                            <ul class="breadcrumb" id="ul_btn_Maqueta">
+                                <li class="breadcrumb-item">
+                                    <div class="input-group-btn" id="div_btnOperaciones">
+                                        <button disabled type="button" class="dim cssOcultarObjeto btn btn-primary btnFormulario ripple" operacion="N" titlealt="Nuevo" id="button_Nuevo"><i class="la la-file"></i><span>&#160;Nuevo</span></button>
+                                        <button disabled type="button" class="dim cssOcultarObjeto btn btn-primary btnFormulario ripple" operacion="G" titlealt="Guardar" id="button_Guardar"><i class="la la-save"></i><span>&#160;Guardar</span></button>
+                                        <button disabled type="button" class="dim cssOcultarObjeto btn btn-primary btnFormulario ripple" operacion="E" titlealt="Eliminar" id="button_Eliminar"><i class="la la-trash"></i><span>&#160;Eliminar</span></button>
+                                        <button disabled type="button" class="dim cssOcultarObjeto btn btn-primary btnFormulario ripple" operacion="CO" titlealt="Contabilizar" id="button_Anular"><i class="la la-book"></i><span>&#160;Contabilizar</span></button>
+                                        <button disabled type="button" class="dim cssOcultarObjeto btn btn-primary btnFormulario ripple" operacion="A" titlealt="Anular" id="button_Anular"><i class="la la-times-circle "></i><span>&#160;Anular</span></button>
+                                        <button disabled type="button" class="dim cssOcultarObjeto btn btn-primary btnFormulario ripple" operacion="I" titlealt="Imprimir" id="button_Imprimir"><i class="la la-print"></i><span>&#160;Imprimir</span></button>
+                                        <button disabled type="button" class="dim cssOcultarObjeto btn btn-primary btnFormulario ripple" operacion="C" titlealt="Cancelar" id="button_Cancelar"><i class="la la-times-circle-o"></i><span>&#160;Cancelar</span></button>
+                                        <button disabled type="button" class="dim cssOcultarObjeto btn btn-primary btnFormulario ripple" operacion="PA" titlealt="Anterior" id="button_Anterior"><i class="la la-chevron-circle-left"></i><span>&#160;Anterior</span></button>
+                                        <button disabled type="button" class="dim cssOcultarObjeto btn btn-primary btnFormulario ripple" operacion="PS" titlealt="Siguiente" id="button_Siguiente"><i class="la la-chevron-circle-right"></i><span>&#160;Siguiente</span></button>
+                                        <button disabled type="button" class="dim cssOcultarObjeto btn btn-primary btnFormulario ripple" operacion="RG" titlealt="Regenerar" id="button_Regenerar"><i class="la la-chevron-circle-right"></i><span>&#160;Regenerar</span></button>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <iframe id="iframe_BoxJob" style="width:100%;min-height:500px;overflow:hidden;margin-top:45px; " frameborder='0'
+                            scrolling='no' marginheight='0' marginwidth='0' src=""></iframe>
+                    <!-- End Container -->
+
+                </div>
+                <!-- Begin Page Footer-->
+                <footer class="main-footer">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 d-flex align-items-center justify-content-xl-start justify-content-lg-start justify-content-md-start justify-content-center">
+                            <p class="text-gradient-02">Design By Orozco S.A.S</p>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 d-flex align-items-center justify-content-xl-end justify-content-lg-end justify-content-md-end justify-content-center">
+
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" onclick="window.open('http://www.orozco.com')" style="cursor:pointer;">orozco.com</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="documentation.html">Documentation</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="changelog.html">Changelog</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </footer>
+                <!-- End Page Footer -->
+                <a href="#" class="go-top"><i class="la la-arrow-up"></i></a>
+                <!-- Offcanvas Sidebar -->
+                <div class="off-sidebar from-right">
+                    <div class="off-sidebar-container">
+                        <header class="off-sidebar-header">
+                            <ul class="button-nav nav nav-tabs mt-3 mb-3 ml-3" role="tablist" id="weather-tab">
+                                <li><a class="active" data-toggle="tab" href="#messenger" role="tab" id="messenger-tab">Messages</a></li>
+                                <li><a data-toggle="tab" href="#today" role="tab" id="today-tab">Today</a></li>
+                            </ul>
+                            <a href="#off-canvas" class="off-sidebar-close"></a>
+                        </header>
+                        <div class="off-sidebar-content offcanvas-scroll auto-scroll">
+                            <div class="tab-content">
+                                <!-- Begin Messenger -->
+                                <div role="tabpanel" class="tab-pane show active fade" id="messenger" aria-labelledby="messenger-tab">
+                                    <!-- Begin Chat Message -->
+                                    <span class="date">Today</span>
+                                    <div class="messenger-message messenger-message-sender">
+                                        <img class="messenger-image messenger-image-default" src="assets/img/avatar/avatar-02.jpg"
+                                             alt="...">
+                                        <div class="messenger-message-wrapper">
+                                            <div class="messenger-message-content">
+                                                <p>
+                                                    <span class="mb-2">Brandon wrote</span>
+                                                    Hi David, what's up?
+                                                </p>
+                                            </div>
+                                            <div class="messenger-details">
+                                                <span class="messenger-message-localization font-size-small">
+                                                    2 minutes
+                                                    ago
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="messenger-message messenger-message-recipient">
+                                        <div class="messenger-message-wrapper">
+                                            <div class="messenger-message-content">
+                                                <p>
+                                                    Hi Brandon, fine and you?
+                                                </p>
+                                                <p>
+                                                    I'm working on the next update of Elisyam
+                                                </p>
+                                            </div>
+                                            <div class="messenger-details">
+                                                <span class="messenger-message-localisation font-size-small">
+                                                    3 minutes
+                                                    ago
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="messenger-message messenger-message-sender">
+                                        <img class="messenger-image messenger-image-default" src="assets/img/avatar/avatar-02.jpg"
+                                             alt="...">
+                                        <div class="messenger-message-wrapper">
+                                            <div class="messenger-message-content">
+                                                <p>
+                                                    <span class="mb-2">Brandon wrote</span>
+                                                    I can't wait to see
+                                                </p>
+                                            </div>
+                                            <div class="messenger-details">
+                                                <span class="messenger-message-localization font-size-small">
+                                                    5 minutes
+                                                    ago
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="messenger-message messenger-message-recipient">
+                                        <div class="messenger-message-wrapper">
+                                            <div class="messenger-message-content">
+                                                <p>
+                                                    I'm almost done
+                                                </p>
+                                            </div>
+                                            <div class="messenger-details">
+                                                <span class="messenger-message-localisation font-size-small">
+                                                    10 minutes
+                                                    ago
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="date">Yesterday</span>
+                                    <div class="messenger-message messenger-message-sender">
+                                        <img class="messenger-image messenger-image-default" src="assets/img/avatar/avatar-05.jpg"
+                                             alt="...">
+                                        <div class="messenger-message-wrapper">
+                                            <div class="messenger-message-content">
+                                                <p>
+                                                    I updated the server tonight
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="messenger-message messenger-message-recipient">
+                                        <div class="messenger-message-wrapper">
+                                            <div class="messenger-message-content">
+                                                <p>
+                                                    Didn't you have any problems?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="messenger-message messenger-message-sender">
+                                        <img class="messenger-image messenger-image-default" src="assets/img/avatar/avatar-05.jpg"
+                                             alt="...">
+                                        <div class="messenger-message-wrapper">
+                                            <div class="messenger-message-content">
+                                                <p>
+                                                    No!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="messenger-message messenger-message-recipient">
+                                        <div class="messenger-message-wrapper">
+                                            <div class="messenger-message-content">
+                                                <p>
+                                                    Great!
+                                                </p>
+                                                <p>
+                                                    See you later!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Chat Message -->
+                                    <!-- Begin Message Form -->
+                                    <div class="enter-message">
+                                        <div class="enter-message-form">
+                                            <input type="text" placeholder="Enter your message..." />
+                                        </div>
+                                        <div class="enter-message-button">
+                                            <a href="#" class="send"><i class="ion-paper-airplane"></i></a>
+                                        </div>
+                                    </div>
+                                    <!-- End Message Form -->
+                                </div>
+                                <!-- End Messenger -->
+                                <!-- Begin Today -->
+                                <div role="tabpanel" class="tab-pane fade" id="today" aria-labelledby="today-tab">
+                                    <!-- Begin Today Stats -->
+                                    <div class="sidebar-heading pt-0">Today</div>
+                                    <div class="today-stats mt-3 mb-3">
+                                        <div class="row">
+                                            <div class="col-4 text-center">
+                                                <i class="la la-users"></i>
+                                                <div class="counter">264</div>
+                                                <div class="heading">Clients</div>
+                                            </div>
+                                            <div class="col-4 text-center">
+                                                <i class="la la-cart-arrow-down"></i>
+                                                <div class="counter">360</div>
+                                                <div class="heading">Sales</div>
+                                            </div>
+                                            <div class="col-4 text-center">
+                                                <i class="la la-money"></i>
+                                                <div class="counter">$ 4,565</div>
+                                                <div class="heading">Earnings</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Today Stats -->
+                                    <!-- Begin Friends -->
+                                    <div class="sidebar-heading">Friends</div>
+                                    <div class="quick-friends mt-3 mb-3">
+                                        <ul class="list-group w-100">
+                                            <li class="list-group-item">
+                                                <div class="media">
+                                                    <div class="media-left align-self-center mr-3">
+                                                        <img src="assets/img/avatar/avatar-02.jpg" alt="..." class="img-fluid rounded-circle"
+                                                             style="width: 35px;">
+                                                    </div>
+                                                    <div class="media-body align-self-center">
+                                                        <a href="javascript:void(0);">Brandon Smith</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="media">
+                                                    <div class="media-left align-self-center mr-3">
+                                                        <img src="assets/img/avatar/avatar-03.jpg" alt="..." class="img-fluid rounded-circle"
+                                                             style="width: 35px;">
+                                                    </div>
+                                                    <div class="media-body align-self-center">
+                                                        <a href="javascript:void(0);">Louis Henry</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="media">
+                                                    <div class="media-left align-self-center mr-3">
+                                                        <img src="assets/img/avatar/avatar-04.jpg" alt="..." class="img-fluid rounded-circle"
+                                                             style="width: 35px;">
+                                                    </div>
+                                                    <div class="media-body align-self-center">
+                                                        <a href="javascript:void(0);">Nathan Hunter</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="media">
+                                                    <div class="media-left align-self-center mr-3">
+                                                        <img src="assets/img/avatar/avatar-05.jpg" alt="..." class="img-fluid rounded-circle"
+                                                             style="width: 35px;">
+                                                    </div>
+                                                    <div class="media-body align-self-center">
+                                                        <a href="javascript:void(0);">Megan Duncan</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="media">
+                                                    <div class="media-left align-self-center mr-3">
+                                                        <img src="assets/img/avatar/avatar-06.jpg" alt="..." class="img-fluid rounded-circle"
+                                                             style="width: 35px;">
+                                                    </div>
+                                                    <div class="media-body align-self-center">
+                                                        <a href="javascript:void(0);">Beverly Oliver</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- End Friends -->
+                                    <!-- Begin Settings -->
+                                    <div class="sidebar-heading">Settings</div>
+                                    <div class="quick-settings mt-3 mb-3">
+                                        <ul class="list-group w-100">
+                                            <li class="list-group-item">
+                                                <div class="media">
+                                                    <div class="media-body align-self-center">
+                                                        <p class="text-dark">Notifications Email</p>
+                                                    </div>
+                                                    <div class="media-right align-self-center">
+                                                        <label>
+                                                            <input class="toggle-checkbox" type="checkbox" checked>
+                                                            <span>
+                                                                <span></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="media">
+                                                    <div class="media-body align-self-center">
+                                                        <p class="text-dark">Notifications Sound</p>
+                                                    </div>
+                                                    <div class="media-right align-self-center">
+                                                        <label>
+                                                            <input class="toggle-checkbox" type="checkbox">
+                                                            <span>
+                                                                <span></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="media">
+                                                    <div class="media-body align-self-center">
+                                                        <p class="text-dark">Chat Message Sound</p>
+                                                    </div>
+                                                    <div class="media-right align-self-center">
+                                                        <label>
+                                                            <input class="toggle-checkbox" type="checkbox" checked>
+                                                            <span>
+                                                                <span></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- End Settings -->
+                                </div>
+                                <!-- End Today -->
+                            </div>
+                        </div>
+                        <!-- End Offcanvas Container -->
+                    </div>
+                    <!-- End Offsidebar Container -->
+                </div>
+                <!-- End Offcanvas Sidebar -->
+                <!-- End Content -->
+            </div>
+            <!-- End Page Content -->
+        </div>
+
+    </div>
+    <!-- Begin Vendor Js -->
+    <!-- Popup_AgregarPacientes -->
+    <div id="popup_VistapreviaImpresion" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Impresión</h4>
+                    <table>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>&#160;<span>Cerrar</span></button>
+                                <button type="button" class="btn btn-primary" onclick="imprimirRegistros('div_DataImpresion')"><i class="fa fa-print"></i>&#160;<span>Imprimir</span></button>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-xs-12" id="div_DataImpresion">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div style="text-align: center">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>&#160;<span>Cerrar</span></button>
+                        <button type="button" class="btn btn-primary" onclick="imprimirRegistros('div_DataImpresion')"><i class="fa fa-print"></i>&#160;<span>Imprimir</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="popup_Vistaprevia" class="modal fade">
+        <div class="modal-dialog modal-lg">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Transacciones</h4>
+                    <table>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>&#160;<span>Cerrar</span></button>
+
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-xs-12" id="div_DataView">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div style="text-align: center">
+                        <button type="button" id="btnRegenerar" class="btn btn-primary" onclick="Regenerar()"><i class="fa fa-print"></i>&#160;<span>Regenerar</span></button>
+                        <button type="button" class="btn btn-primary"><i class="fa fa-print"></i>&#160;<span>Reenviar</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="assets/vendors/js/base/jquery.min.js"></script>
+    <script src="assets/vendors/js/base/jquery.ui.min.js"></script>
+
+    <script src="assets/vendors/js/base/core.js"></script>
+    <!-- End Vendor Js -->
+    <!-- Begin Page Vendor Js -->
+    <script src="assets/vendors/js/nicescroll/nicescroll.min.js"></script>
+ 
+    <script src="assets/vendors/js/app/app.min.js"></script>
+    <script src="js/Configuracion.js"></script>
+    <script src="js/Maqueta.js"></script>
+    <!-- <script src="Scripts/jquery.noty.packaged.min.js"></script>
+           <script src="assets/vendors/js/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="Scripts/jquery.Print.js"></script>
+    <script src="Scripts/Maqueta.js?v=1.8"></script>-->
+
+    <script>
+
+        function getBase64Image(img) {
+            var canvas = document.createElement("canvas");
+            canvas.width = img.width;
+            canvas.height = img.height;
+            var ctx = canvas.getContext("2d");
+            ctx.drawImage(img, 0, 0);
+            var dataURL = canvas.toDataURL();
+            return dataURL;
+        }
+
+        function quitarDecimales() {
+
+            var lstTd = $(".quitarDecimal")
+
+            for (var i = 0; i < lstTd.length; i++) {
+
+                var objTd = lstTd[i];
+                $(objTd).html($(objTd).html().replace(".00", ""))
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

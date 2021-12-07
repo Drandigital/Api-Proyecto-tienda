@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "declaration": true,
+    "declarationDir": "typings",
+    "target": "es5",
+    "outDir": "tmp",
+    "lib": ["es2015", "es2016", "dom"]
+  },
+  "include": [
+    "./src/*.ts", "../../../../ApiFacturacion/Controllers/RolesController.cs", "../../../../ApiFacturacion/Controllers/CotizacionesController.cs", "../../../Maestros/Ventas/ConsecutivoFacturas/ConsecutivoFacturas.html", "../../../../ApiFacturacion/Controllers/ConsecutivosFacturacionController.cs", "../../../../Tiserium.Configuracion/ConsecutivosFacturacion.cs", "../../../../ApiFacturacion/Controllers/UtilidadesController.cs", "../../../../Tiserium.Operativos/Facturas.cs", "../../../../ApiFacturacion/Controllers/FacturasController.cs", "../../../../ApiFacturacion/Controllers/WidgetsController.cs", "../../../../Tiserium.Configuracion/MaestrosDIAN.cs", "../../../../Tiserium.FacturacionElectronica/Servicio.cs", "../../../../Tiserium.AssemblySQL/FacturacionElectronica.cs"
+  ]
+}
